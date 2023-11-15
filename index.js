@@ -1,6 +1,6 @@
 function copyPassword() {
 
-    let passInput = document.getElementById("passInput");
+    let passInput = document.getElementById("password");
 
     if (passInput.value.trim() === "") {
         alert('Please generate a password.');
@@ -54,7 +54,7 @@ function updateLengthValue() {
     document.getElementById("lengthValue").innerText = length;
 }
 
-// link this to the Password Strength: portion
+// Add a feature where as the user generates a password; the Password Strength value changes
 // options are: Bad, Weak, Strong, Very Strong
 // Bad password: 5-7
 // Weak: 8-11

@@ -20,7 +20,7 @@
     <br>
     <br>
     <div id="pass-strength-text">
-        <strong>Password Strength: </strong>
+        <strong>Password Strength: <span id="passwordStrength">Strong</span></strong> <!--Strong is default; will have other options later-->
     </div>
     <br>
     <div>
@@ -53,7 +53,7 @@
     <div class="slider-container">
         <strong class="passwordlength">Password Length: <span id="lengthValue">12</span></strong>
         <br>
-        <input type="range" id="length" min="5" max="64" value="12" class="slider">
+        <input type="range" id="length" min="5" max="64" value="12" class="slider" oninput="updatePasswordStrength">
     </div>
     <br>
     <div>
