@@ -1,6 +1,6 @@
 function copyPassword() {
 
-    var passInput = document.getElementById("passInput");
+    let passInput = document.getElementById("passInput");
 
     if (passInput.value.trim() === "") {
         alert('Please generate a password.');
