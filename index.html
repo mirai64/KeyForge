@@ -12,7 +12,7 @@
         <h1>Need a new password? Generate a unique password with KeyForgeJS!</h1>
     </div>
     <div class="pass-wrapper">
-        <input class="password-form" type="text" id="passInput" onkeydown="return false;">
+        <input class="password-form" type="text" id="password" readonly>
         <button class="copybutton" type="button" onclick="copyPassword()">
            <img src="https://cdn-icons-png.flaticon.com/512/1621/1621635.png"> <!-- temporary button, replace with actual svg copy icon inside the form later -->
         </button>
@@ -29,35 +29,35 @@
         </div>
         <br>
         <div>
-            <input type="checkbox" id="uppercase-char" value="upper-charvalue">
-            <label for="uppercase-char">Uppercase characters</label>
+            <input type="checkbox" id="uppercase" checked>
+            <label for="uppercase">Uppercase characters</label>
         </div>
         <br>
         <div>
-            <input type="checkbox" id="lowercase-char" value="lower-charvalue">
-            <label for="lowercase-char">Lowercase characters</label>
+            <input type="checkbox" id="lowercase" checked>
+            <label for="lowercase">Lowercase characters</label>
         </div>
         <br>
         <div>
-            <input type="checkbox" id="numbers-char" value="numbers-value">
-            <label for="numbers-char">Numbers</label>
+            <input type="checkbox" id="numbers" checked>
+            <label for="numbers">Numbers</label>
         </div>
         <br>
         <div>
-            <input type="checkbox" id="symbols-char" value="symbol-value">
-            <label for="symbols-char">Symbols</label>
+            <input type="checkbox" id="symbols" checked>
+            <label for="symbols">Symbols</label>
         </div>
     </div>
     <br>
     <br>
     <div class="slider-container">
-        <strong class="passwordlength">Password Length: <span id="charRange"></span></strong>
+        <strong class="passwordlength">Password Length: <span id="lengthValue">12</span></strong>
         <br>
-        <input type="range" min="5" max="64" value="12" class="slider" id="passRange">
+        <input type="range" id="length" min="5" max="64" value="12" class="slider">
     </div>
     <br>
     <div>
-        <button class="generate-button" type="button">Generate Password</button>
+        <button class="generate-button" onclick="generatePassword()">Generate Password</button>
     </div>
     <script src="index.js"></script>
 </body>
