@@ -16,7 +16,7 @@ function copyPassword() {
         });
 }
 
-let slider = document.getElementById("passRange")
+let slider = document.getElementById("length")
 let output = document.getElementById("charRange")
 
 output.innerHTML = slider.value;
