@@ -2,7 +2,16 @@
 
 body {
     font-family: 'Source Sans 3', sans-serif;
+    text-align: center;
 }
+
+/* .main-title {
+  text-align: center;
+}
+
+.pass-wrapper {
+  text-align: center;
+} */
 
 .password-form {
     font-size: 24px;
@@ -37,6 +46,7 @@ body {
 
 .slider-container {
     width: 16%;
+    justify-self: center;
 }
 
 .slider {
