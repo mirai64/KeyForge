@@ -75,7 +75,7 @@ body.dark {
 
 .slider-container {
     width: 16%;
-    justify-self: center;
+    margin: 0 auto;
 }
 
 .slider {

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="togglecontainer" id="lightdarktoggle">
+    <div class="togglecontainer" id="lightdarktoggle" title="Light/Dark Mode Toggle">
             <div class="toggle"></div>
         </div>
     <div class="main-title">
@@ -20,9 +20,7 @@
                 <img src="copy-icon.png" title="Copy your password">
              </button>
         </div>
-        
     </div>
-    <br>
     <br>
     <div>
         <div>
@@ -56,6 +54,7 @@
         <br>
         <input type="range" id="length" min="5" max="64" value="12" class="slider" oninput="updatePasswordStrength">
     </div>
+    <br>
     <br>
     <div>
         <button class="generate-button" onclick="generatePassword()">Generate Password</button>
