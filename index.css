@@ -6,13 +6,13 @@ body {
     color: black;
 }
 
-body.dark-mode {
+body.dark {
     color: white;
     background-color: #252525;
-    transition: all 0.25s;
+    transition: all 0.25s ease-in-out;
 }
 
-.light-dark-container {
+.togglecontainer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,7 +20,7 @@ body.dark-mode {
   justify-content: center;
 }
 
-.light-dark-toggle {
+.toggle {
     position: relative;
     height: 130px;
     width: 300px;
@@ -31,7 +31,7 @@ body.dark-mode {
     cursor: pointer;
 }
 
-.light-dark-toggle::before {
+.toggle::before {
     content: '';
     position: absolute;
     height: 110px;
@@ -44,7 +44,8 @@ body.dark-mode {
     transition: all 0.25s ease-in-out;
 }
 
-.light-dark-toggle.active::before {
+.toggle.active::before {
+    background-color: rgb(128, 128, 128);
     left: calc(100% - 110px - 14px)
 }
 

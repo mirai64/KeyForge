@@ -53,11 +53,23 @@ function updateLengthValue() {
     document.getElementById("lengthValue").innerText = length;
 }
 
-const body = document.querySelector("light-dark-container"),
-    toggle = document.querySelector(".light-dark-toggle");
+const body = document.querySelector("body"),
+    toggle = document.querySelector(".toggle");
+
+    let getMode = localStorage.getItem("mode");
+    if (getMode && getMode === "dark") {
+        body.classList.add("dark")
+        toggle.classList.add("active")
+    }
+    console.log(getMode)
 
     toggle.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
+        body.classList.toggle("dark")
+
+        if(!body.classList.contains("dark")){
+            return localStorage.setItem("mode", "light");
+        }
+        localStorage.setItem("mode", "dark")
     });
 
-toggle.addEventListener("click", () => toggle.classList.toggle("active"))
+    toggle.addEventListener("click", () => toggle.classList.toggle("active"));
