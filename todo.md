@@ -2,7 +2,7 @@
 
 # current todo list
 
-- fix the password strength feature
+- fix the password strength feature (add this feature later on)
 - finish the app's design according to the ui
 - add a toggleable light mode and dark mode; defaults to the user's system preference
 - update the ui, make the design of the app cleaner and more appealing

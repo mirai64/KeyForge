@@ -53,10 +53,3 @@ function updateLengthValue() {
     let length = document.getElementById("length").value;
     document.getElementById("lengthValue").innerText = length;
 }
-
-// Add a feature where as the user generates a password; the Password Strength value changes
-// options are: Bad, Weak, Strong, Very Strong
-// Bad password: 5-7
-// Weak: 8-11
-// Strong: 12-24
-// Very Strong: 25-64

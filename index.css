@@ -5,14 +5,6 @@ body {
     text-align: center;
 }
 
-/* .main-title {
-  text-align: center;
-}
-
-.pass-wrapper {
-  text-align: center;
-} */
-
 .password-form {
     font-size: 24px;
     width: 950px;
@@ -37,11 +29,6 @@ body {
     background-color: #d14d4d;
     text-decoration: none;
     cursor: pointer;
-}
-
-#pass-strength-text {
-    font-weight: 400;
-    font-size: 24px;
 }
 
 .slider-container {
