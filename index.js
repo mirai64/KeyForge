@@ -73,3 +73,7 @@ const body = document.querySelector("body"),
     });
 
     toggle.addEventListener("click", () => toggle.classList.toggle("active"));
+
+// let toggleSize = document.getElementById("lightdarktoggle");
+// toggleSize.style.width = "50%";
+// toggleSize.style.height = "50%";
