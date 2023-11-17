@@ -2,7 +2,13 @@
 
 body {
     font-family: 'Source Sans 3', sans-serif;
-    text-align: center;
+    /* text-align: center; */
+    color: black;
+}
+
+body.dark-mode {
+    color: white;
+    background-color: #353535;
 }
 
 .password-form {
