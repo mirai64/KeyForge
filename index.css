@@ -8,7 +8,44 @@ body {
 
 body.dark-mode {
     color: white;
-    background-color: #353535;
+    background-color: #252525;
+    transition: all 0.25s;
+}
+
+.light-dark-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.light-dark-toggle {
+    position: relative;
+    height: 130px;
+    width: 300px;
+    border: solid;
+    border-radius: 200px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.light-dark-toggle::before {
+    content: '';
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    background-color: black;
+    top: 50%;
+    border-radius: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    transition: all 0.25s ease-in-out;
+}
+
+.light-dark-toggle.active::before {
+    left: calc(100% - 110px - 14px)
 }
 
 .password-form {

@@ -46,10 +46,18 @@ function generatePassword() {
         }
 
         document.getElementById("password").value = password;
-
 }
 
 function updateLengthValue() {
     let length = document.getElementById("length").value;
     document.getElementById("lengthValue").innerText = length;
 }
+
+const body = document.querySelector("light-dark-container"),
+    toggle = document.querySelector(".light-dark-toggle");
+
+    toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+    });
+
+toggle.addEventListener("click", () => toggle.classList.toggle("active"))
