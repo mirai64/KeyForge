@@ -16,35 +16,36 @@
     <div class="pass-wrapper">
         <input class="password-form" type="text" id="password" readonly>
         <div class="tooltip">
-            <button class="copybutton" type="button" onclick="copyPassword()">
+            <button class="copybutton" type="button" onclick="copyPassword(); toggleToolTip()">
                 <img src="copy-icon.png" title="Copy your password">
              </button>
+             <div class="tooltiptext" id="copyToolTip">Password copied!</div>
         </div>
     </div>
     <br>
     <div>
-        <div>
-            <strong>Customize your password</strong>
+        <div class="customize-your-password">
+            <strong>Customize your password:</strong>
         </div>
         <br>
         <div>
-            <input type="checkbox" id="uppercase" checked>
-            <label for="uppercase">Uppercase characters</label>
+            <input class="checkbox-size" type="checkbox" id="uppercase" checked>
+            <label class="check-font" for="uppercase">Uppercase characters</label>
         </div>
         <br>
         <div>
-            <input type="checkbox" id="lowercase" checked>
-            <label for="lowercase">Lowercase characters</label>
+            <input class="checkbox-size" type="checkbox" id="lowercase" checked>
+            <label class="check-font" for="lowercase">Lowercase characters</label>
         </div>
         <br>
         <div>
-            <input type="checkbox" id="numbers" checked>
-            <label for="numbers">Numbers</label>
+            <input class="checkbox-size" type="checkbox" id="numbers" checked>
+            <label class="check-font" for="numbers">Numbers</label>
         </div>
         <br>
         <div>
-            <input type="checkbox" id="symbols" checked>
-            <label for="symbols">Symbols</label>
+            <input class="checkbox-size" type="checkbox" id="symbols" checked>
+            <label class="check-font" for="symbols">Symbols</label>
         </div>
     </div>
     <br>

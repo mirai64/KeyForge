@@ -9,10 +9,10 @@ function copyPassword() {
 
     navigator.clipboard.writeText(passInput.value)
         .then(function() {
-            alert("Password copied!");
+            // alert("Password copied!");
         })
         .catch(function(err) {
-            alert("Unable to copy password. Please try again.");
+            alert("Unable to copy password. Please refresh the page and try again.");
         });
 }
 
@@ -39,12 +39,12 @@ function generatePassword() {
     if (numbers) charset += "0123456789"
     if (symbols) charset += "!@#$%^&*()_+[]{}|;:,.<>?"
 
+    // password generation
     let password = "";
         for (let i = 0; i < length; i++) {
             let randomIndex = Math.floor(Math.random() * charset.length);
             password += charset[randomIndex]
         }
-
         document.getElementById("password").value = password;
 }
 
@@ -74,6 +74,16 @@ const body = document.querySelector("body"),
 
     toggle.addEventListener("click", () => toggle.classList.toggle("active"));
 
-// let toggleSize = document.getElementById("lightdarktoggle");
-// toggleSize.style.width = "50%";
-// toggleSize.style.height = "50%";
+function toggleToolTip() {
+    let tooltip = document.getElementById("copyToolTip");
+      tooltip.style.display = "block";
+
+      // Hides the tooltip after 3 seconds; fade out transition
+      setTimeout(function() {
+        tooltip.style.opacity = 0;
+        setTimeout(function() {
+          tooltip.style.display = "none";
+          tooltip.style.opacity = 1;
+        }, 1000);
+      }, 3000);
+}

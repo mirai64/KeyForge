@@ -73,6 +73,20 @@ body.dark {
     cursor: pointer;
 }
 
+.customize-your-password {
+    font-size: 24px;
+}
+
+.check-font {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.checkbox-size {
+    width: 15px;
+    height: 15px;
+}
+
 .slider-container {
     width: 16%;
     margin: 0 auto;
@@ -121,3 +135,25 @@ body.dark {
     font-weight: bolder;
     font-size: 24px;
   }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    display: none;
+    width: 120px;
+    background-color: #ff6161;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
