@@ -2,7 +2,6 @@
 
 # current todo list
 
-- fix the password strength feature (add this feature later on)
-- finish the app's design according to the ui
-- update the ui, make the design of the app cleaner and more appealing
-- instead of a browser wide alert for when you press the copy button, add a small "Copied!" bubble above the button
+- Add a password strength feature.
+- Add a tooltip when the user presses the copy button, add a small "Copied!" tooltip above the button.
+- Finish the design and layout of this app, make it look cleaner.
